@@ -21,6 +21,7 @@ end
 
 package "go-server" do
     source "#{Chef::Config[:file_cache_path]}/go-server.deb"
+    provider Chef::Provider::Package::Dpkg
     action :install
 end
 

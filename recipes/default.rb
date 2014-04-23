@@ -34,7 +34,7 @@ template "/etc/default/go-server" do
     owner    "root"
     group    "root"
     mode     0644
-    notifies :restart, resource(:service => "go-server")
+    notifies :restart, resources(:service => "go-server")
 end
 
 # http://www.thoughtworks.com/products/docs/go/13.4/help/

@@ -17,6 +17,7 @@ end
 
 remote_file "#{Chef::Config[:file_cache_path]}/go-server.deb" do
     source "http://download01.thoughtworks.com/go/13.4.1/ga/go-server-13.4.1-18342.deb"
+    mode 0777
 end
 
 package "go-server" do
@@ -59,6 +60,6 @@ end
 
 # $ sudo dpkg -i http://download01.thoughtworks.com/go/13.4.1/ga/go-server-13.4.1-18342.deb
 
-
+# /etc/­go/cr­uise-­confi­g.xml­
 # /etc/default/go-server
 # http://ubuntu:8153/go

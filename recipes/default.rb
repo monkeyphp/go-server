@@ -7,6 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
+# sudo apt-get purge openjdk*
+
 package "openjdk-7-jre" do
     action :install
 end
